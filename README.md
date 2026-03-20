@@ -1,25 +1,20 @@
-เช็คชื่อ 
-Week 4 https://forms.gle/3Apfu8EHiadf1JMv7
-
-
-#Install ingress
-```
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml
-```
-
 # Home work Week 4
-1. Deploy Jenkins and Grafana on kubernetes.
-2. Create github repo with https://github.com/user-name/b5124817-xxxxx
-   - Create folder jenkins and grafana
-   - Add file
-     - deployment.yaml
-     - service.yaml
-     - pv.yaml
-     - pvc.yaml
-     - ingress.yaml
-     - Screen capture web browser
-   - if deploy fail -> capture log on kubernetes and write detail of error.
-3. Don't forget map domain in file hosts.
+1. Deploy Jenkins and Grafana on Kubernetes
+2. Create GitHub repository and upload configuration files
+3. Map domain in hosts file
 
-![Jenkins](jenkins.png)
-![Grafana](grafana.png)
+### หน้า Jenkins Dashboard
+แสดงหน้า Dashboard ของ Jenkins หลังจากติดตั้งสำเร็จ
+![Jenkins 1](jenkins1.png)
+![Jenkins 2](jenkins2.png) 
+
+### หน้าเข้าสู่ระบบ Grafana
+แสดงหน้า Login ของ Grafana สำหรับระบบ Monitoring
+![Grafana](gafana.png)
+
+### สถานะ Pod ใน Cluster
+แสดงผลลัพธ์คำสั่ง `kubectl get pods -A`
+![Pods Status](pods.png)
+
+## Map Domain ใน hosts file
+![Note/Logs](note.png)
